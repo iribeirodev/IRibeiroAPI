@@ -26,7 +26,7 @@ public class PublicationService : IPublicationService
             })
             .ToListAsync();
 
-        if (publications == null || publications.Count == 0)
+        if (publications == null || !publications.Any())
         {
             throw new EntityNotFoundException(ResponseError.NotFound);
         }
