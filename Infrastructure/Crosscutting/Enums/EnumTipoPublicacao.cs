@@ -1,8 +1,8 @@
 namespace IRibeiroAPI.Infrastructure.Crosscutting.Enums;
 
-public enum EnumTipoPublicacao
+public enum EnumPublicationType
 {
-    Artigo = 1,
+    Article = 1,
     Tutorial = 2,
-    Noticia = 3    
+    News = 3    
 }

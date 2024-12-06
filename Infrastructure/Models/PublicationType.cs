@@ -3,8 +3,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace IRibeiroAPI.Infrastructure.Models;
 
-[Table("tipopublicacao")]
-public class TipoPublicacao
+[Table("publication_type")]
+public class PublicationType
 {
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)] 
@@ -12,7 +12,8 @@ public class TipoPublicacao
 
     [Required]
     [MaxLength(30)] 
-    public string Nome { get; set; } 
+    [Column("name")]
+    public string Name { get; set; } 
     
-    public ICollection<Publicacao> Publicacoes { get; set; }
+    public ICollection<Publication> Publications { get; set; }
 }

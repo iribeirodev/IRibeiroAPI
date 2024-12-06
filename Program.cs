@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 Env.Load();
 
-builder.Services.AddTransient<IPublicacaoService, PublicacaoService>();
+builder.Services.AddTransient<IPublicationService, PublicationService>();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

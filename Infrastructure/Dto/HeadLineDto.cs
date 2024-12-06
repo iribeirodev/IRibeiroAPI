@@ -5,7 +5,7 @@ namespace IRibeiroAPI.Infrastructure.Dto;
 /// </summary>
 public class HeadLineDto
 {
-    public string DataPublicacao { get; set; }    
-    public string Titulo { get; set; }
-    public string Fonte { get; set; }
+    public string PublicationDate { get; set; }    
+    public string Title { get; set; }
+    public string Source { get; set; }
 }

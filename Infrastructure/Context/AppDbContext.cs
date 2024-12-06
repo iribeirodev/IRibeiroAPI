@@ -5,10 +5,7 @@ namespace IRibeiroAPI.Infrastructure.Context;
 
 public class AppDbContext: DbContext
 {
-    public AppDbContext(DbContextOptions<AppDbContext> options): base(options)
-    {
-    }
-
-    public DbSet<TipoPublicacao> TiposPublicacoes { get; set; }
-    public DbSet<Publicacao> Publicacoes { get; set; }
+    public AppDbContext(DbContextOptions<AppDbContext> options): base(options) {}
+    public DbSet<PublicationType> PublicationTypes { get; set; }
+    public DbSet<Publication> Publications { get; set; }
 }
